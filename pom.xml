@@ -32,6 +32,7 @@
 		</dependency>
 		
 		<!-- 包含Eureka库（其中包含Ribbon） -->
+		<!-- 我并没有配置actuator，但是服务实际上拥有这个能力 -->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
