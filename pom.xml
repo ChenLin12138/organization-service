@@ -31,6 +31,21 @@
 			<scope>test</scope>
 		</dependency>
 		
+		<!--使用JPA-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+		<!--使用mysql-->
+		<dependency>
+		    <groupId>mysql</groupId>
+		    <artifactId>mysql-connector-java</artifactId>
+		</dependency>
+		<!--使用spring cloud client-->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-config-client</artifactId>
+		</dependency>
 		<!-- 包含Eureka库（其中包含Ribbon） -->
 		<!-- 我并没有配置actuator，但是服务实际上拥有这个能力 -->
 		<dependency>
