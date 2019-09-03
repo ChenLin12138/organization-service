@@ -31,6 +31,11 @@
 			<scope>test</scope>
 		</dependency>
 		
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		
 		<!--使用JPA-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -50,7 +55,7 @@
 		<!-- 我并没有配置actuator，但是服务实际上拥有这个能力 -->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
 		</dependency>
 	</dependencies>
 	
