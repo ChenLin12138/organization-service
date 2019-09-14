@@ -1,4 +1,4 @@
-package com.lin.organization;
+package com.chenlin.organization;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -7,7 +7,7 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 @SpringBootApplication
 @EnableEurekaClient
-@ServletComponentScan(basePackages = "com.lin.organization.*")
+@ServletComponentScan(basePackages = "com.chenlin.organization.*")
 public class OrganizationServiceApplication {
 
 	public static void main(String[] args) {

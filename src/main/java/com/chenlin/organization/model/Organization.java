@@ -1,4 +1,4 @@
-package com.lin.organization.model;
+package com.chenlin.organization.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

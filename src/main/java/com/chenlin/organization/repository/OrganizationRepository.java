@@ -1,9 +1,9 @@
-package com.lin.organization.repository;
+package com.chenlin.organization.repository;
 
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
-import com.lin.organization.model.Organization;
+import com.chenlin.organization.model.Organization;
 
 /**
  * @author Chen Lin

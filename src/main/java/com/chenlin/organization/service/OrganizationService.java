@@ -1,12 +1,12 @@
-package com.lin.organization.service;
+package com.chenlin.organization.service;
 
 import java.util.UUID;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.lin.organization.model.Organization;
-import com.lin.organization.repository.OrganizationRepository;
+import com.chenlin.organization.model.Organization;
+import com.chenlin.organization.repository.OrganizationRepository;
 
 /**
  * @author Chen Lin

@@ -1,4 +1,4 @@
-package com.lin.organization;
+package com.chenlin.organization;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

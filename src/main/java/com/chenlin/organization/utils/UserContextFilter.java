@@ -1,4 +1,4 @@
-package com.lin.organization.utils;
+package com.chenlin.organization.utils;
 
 import java.io.IOException;
 
