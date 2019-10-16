@@ -36,9 +36,9 @@ public class OrganizationService {
 		orgRepository.save(org);
 	}
 
-	public void deleteOrg(Organization org) {
+	public void deleteOrg(String orgId) {
 		// TODO Auto-generated method stub
-		orgRepository.delete(org);
+		orgRepository.deleteById(orgId);
 	}
 
 }
