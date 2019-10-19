@@ -13,6 +13,9 @@ import javax.servlet.http.HttpServletRequest;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import io.jsonwebtoken.Claims;
+import io.jsonwebtoken.Jwts;
+
 /**
  * @author Chen Lin
  * @date 2019-09-09
@@ -38,7 +41,24 @@ public class UserContextFilter implements Filter {
 		//获取orgid设置进入contextHolder
 		UserContextHolder.getContext().setOrgId(httpServletRequest.getHeader(UserContext.ORG_ID));
 		logger.debug("getLicense Correlation id:{}",UserContextHolder.getContext().getCorrelationId());
+		logger.debug("CustomId from jwt:{}",getCustomId(request));
+		
 		chain.doFilter(httpServletRequest, response);
 	}
+	
 
+	private String getCustomId(ServletRequest request) {
+		String result = "";
+		HttpServletRequest httpServletRequest = (HttpServletRequest) request;
+		String authorization = httpServletRequest.getHeader("authorization");
+		String jwtTokenValue = authorization.replace("Bearer ", "");
+		try {
+			Claims claims = Jwts.parser().setSigningKey("345345fsdgsf5345".getBytes("UTF-8"))
+					.parseClaimsJws(jwtTokenValue).getBody();
+			result = claims.get("customId").toString();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return result;
+	}
 }
