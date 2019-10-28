@@ -69,7 +69,7 @@
 		<!-- Kafka Stream Binder组件 -->
 		<dependency>
   			<groupId>org.springframework.cloud</groupId>
-  			<artifactId>spring-cloud-stream-binder-kafka</artifactId>
+  			<artifactId>spring-cloud-stream</artifactId>
 		</dependency>
 		<!-- Apache Kafka binder组件 -->
 		<dependency>
