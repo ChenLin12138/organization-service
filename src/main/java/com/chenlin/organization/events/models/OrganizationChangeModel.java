@@ -17,7 +17,7 @@ public class OrganizationChangeModel {
 		super();
 		this.type = type;
 		this.action = action;
-		this.correlationId = organizationId;
+		this.organizationId = organizationId;
 		this.correlationId = correlationId;
 	}
 
