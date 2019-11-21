@@ -15,8 +15,10 @@ public class ResourceServerConfiguration extends ResourceServerConfigurerAdapter
 	@Override
 	public void configure (HttpSecurity http) throws Exception {
 		http.authorizeRequests()
+		//有用删除权限的角色申明
 		.antMatchers(HttpMethod.DELETE,"/v1/organizations/**")
 		.hasRole("ADMIN")
+		//任何/v1下面的资源都需要被保护
 		.anyRequest()
 		.authenticated();
 	}

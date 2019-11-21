@@ -19,6 +19,7 @@
 		<spring-cloud.version>Greenwich.SR2</spring-cloud.version>
 		<spring-jwt.version>1.0.9.RELEASE</spring-jwt.version>
 		<jjwt.version>0.7.0</jjwt.version>
+		<swagger.version>2.6.0</swagger.version>
 	</properties>
 
 	<dependencies>
@@ -99,6 +100,18 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-sleuth</artifactId>
 		</dependency>
+				<!-- 引入swagger -->
+		<dependency>
+	    	<groupId>io.springfox</groupId>
+	    	<artifactId>springfox-swagger2</artifactId>
+	    	<version>${swagger.version}</version>
+		</dependency>
+		<dependency>
+	    	<groupId>io.springfox</groupId>
+	    	<artifactId>springfox-swagger-ui</artifactId>
+	 	    <version>${swagger.version}</version>
+		</dependency>
+		
 	</dependencies>
 	
 	<dependencyManagement>
