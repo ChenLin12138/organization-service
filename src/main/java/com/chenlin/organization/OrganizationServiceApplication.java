@@ -8,10 +8,13 @@ import org.springframework.cloud.stream.annotation.EnableBinding;
 import org.springframework.cloud.stream.messaging.Source;
 import org.springframework.security.oauth2.config.annotation.web.configuration.EnableResourceServer;
 
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
+
 @SpringBootApplication
 @EnableEurekaClient
 @ServletComponentScan(basePackages = "com.chenlin.organization.*")
 @EnableResourceServer
+@EnableSwagger2
 //注解告诉Spring Cloud Stream将应用程序绑定到消息代理
 @EnableBinding(Source.class)
 public class OrganizationServiceApplication {
